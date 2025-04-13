@@ -1,0 +1,32 @@
+using system;
+
+
+class program
+
+ {
+
+  static void Main (string[]) 
+
+  { 
+     //Decleartion first then initialization
+
+
+    int age ;// declear an integer variable
+    age = 25;//initialization the integer varable
+
+
+   string firstname;//declear a string variable 
+   firstname = "Nimra";//initialize a string variable
+
+
+    char grade;//declear a char variable
+    grade = 'B';//initialize the char variable
+
+
+      Console.WriteLine( "Decleartion then initialization :");
+      Console.WriteLine( "Age:" + age);
+      Console.WriteLine( "Name:" + firstname);
+      Console.WriteLine( "Grade:" + grade);
+}}
+    
+
