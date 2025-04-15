@@ -1,0 +1,32 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Part 1: Min and Max of common data types
+        Console.WriteLine($"int: {int.MinValue} to {int.MaxValue}");
+        Console.WriteLine($"long: {long.MinValue} to {long.MaxValue}");
+        Console.WriteLine($"double: {double.MinValue} to {double.MaxValue}");
+        Console.WriteLine($"string: no fixed min/max, based on lexicographic order");
+
+        // Part 2: Find max and min among int, long, double
+        int a = 5;
+        long b = 100;
+        double c = 20.5;
+
+        double maxNum = Math.Max(a, Math.Max(b, c));  // Max numeric
+        double minNum = Math.Min(a, Math.Min(b, c));  // Min numeric
+
+        Console.WriteLine($"Max (numeric): {maxNum}");
+        Console.WriteLine($"Min (numeric): {minNum}");
+
+        // Compare strings
+        string s1 = "apple", s2 = "banana";
+        string maxStr = string.Compare(s1, s2) > 0 ? s1 : s2;
+        string minStr = string.Compare(s1, s2) < 0 ? s1 : s2;
+
+        Console.WriteLine($"Max (string): {maxStr}");
+        Console.WriteLine($"Min (string): {minStr}");
+    }
+}
