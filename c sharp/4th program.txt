@@ -1,0 +1,24 @@
+using System;
+
+class VariableDemo
+{
+    // Global variable (field) - use camelCase with an underscore prefix for private fields
+    private static int _globalCounter = 10;
+
+    static void Main()
+    {
+        // Local variable - use camelCase
+        int localCounter = 5;
+
+        Console.WriteLine($"Global Counter: {_globalCounter}");
+        Console.WriteLine($"Local Counter: {localCounter}");
+
+        // Update both counters
+        localCounter += 1;        // Affects only the local variable
+        _globalCounter += 1;      // Affects the global (class-level) variable
+
+        Console.WriteLine("After update:");
+        Console.WriteLine($"Global Counter: {_globalCounter}");
+        Console.WriteLine($"Local Counter: {localCounter}");
+    }
+}
